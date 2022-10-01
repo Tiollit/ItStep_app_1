@@ -10,7 +10,13 @@ int main()
 	cin >> s;
 	cout << "Enter time in minutes - t" << endl;
 	cin >> t;
-	cout << "Speed must be " << 60 * s / t << " kilometers per hour" << endl;
-
+	if (s > 0 && t > 0)
+	{
+		cout << "Speed must be " << 60 * s / t << " kilometers per hour" << endl;
+	}
+	else
+	{
+		cout << "Entered wrong numbers" << endl;
+	}
 	return 0;
 }
